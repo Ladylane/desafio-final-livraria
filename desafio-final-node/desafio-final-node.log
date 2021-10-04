@@ -221,3 +221,59 @@
 2021-10-01T16:55:04.646Z [desafio-final-node] error {req.method}  - loggers is not defined
 2021-10-01T16:55:59.113Z [desafio-final-node] info PUT /cliente - {"clienteId":1,"nome":"Ladylane","email":"ladylane@ladylane.com","senha":"123","telefone":"321","endereco":"R Blablabla"}
 2021-10-01T16:56:07.203Z [desafio-final-node] info GET /venda
+2021-10-01T19:45:28.700Z [desafio-final-node] info GET /livroundefined
+2021-10-01T19:47:50.187Z [desafio-final-node] error {req.method}  - LivroInfoService is not defined
+2021-10-01T19:49:56.432Z [desafio-final-node] info GET /livro/info  - {"livroId":2,"descricao":"garantia de aprendizado em 30 dias","paginas":100,"editora":"Nerd","avaliacoes":[],"_id":"61576664f6e447ea7276bbb3"}
+2021-10-01T19:53:46.112Z [desafio-final-node] info GET /livroundefined
+2021-10-01T20:56:12.572Z [desafio-final-node] info GET /livroundefined
+2021-10-01T21:14:43.787Z [desafio-final-node] error {req.method}  - client.db(...).collection(...).updatetOne is not a function
+2021-10-01T21:20:30.726Z [desafio-final-node] info PUT /livro/info  - {"livroId":2,"descricao":"aprendizado em 30 dias","paginas":100,"editora":"Nerd","avaliacoes":[]}
+2021-10-01T21:21:26.023Z [desafio-final-node] info PUT /livro/info  - {"livroId":2,"descricao":"aprendizado em 30 dias","paginas":100,"editora":"Nerd","avaliacoes":[]}
+2021-10-01T21:22:00.087Z [desafio-final-node] info PUT /livro/info  - {"livroId":2,"descricao":"30 dias","paginas":20,"editora":"Nerdddddddddddd","avaliacoes":[]}
+2021-10-01T21:23:10.316Z [desafio-final-node] info GET /livroundefined
+2021-10-01T21:24:19.104Z [desafio-final-node] info GET /livro/info  - {"livroId":4,"descricao":"java","paginas":50,"editora":"abril","avaliacoes":[],"_id":"61577c82a4b31ee9efdef5d1"}
+2021-10-01T21:24:45.646Z [desafio-final-node] info PUT /livro/info  - {"livroId":4,"descricao":"java do zero","paginas":50,"editora":"abril","avaliacoes":[]}
+2021-10-01T21:32:19.072Z [desafio-final-node] info PUT /livro/info  - {"livroId":4,"descricao":"XXXXXXXXXXXX","paginas":50,"editora":"abril","avaliacoes":[]}
+2021-10-01T22:06:48.045Z [desafio-final-node] info GET /venda
+2021-10-01T22:08:24.784Z [desafio-final-node] error {req.method}  - column livro.clienteId does not exist
+2021-10-01T22:09:06.178Z [desafio-final-node] info GET /venda
+2021-10-01T22:15:45.076Z [desafio-final-node] info GET /venda
+2021-10-01T22:17:08.235Z [desafio-final-node] info GET /venda
+2021-10-01T22:18:47.287Z [desafio-final-node] info GET /venda
+2021-10-01T22:19:21.513Z [desafio-final-node] info GET /venda
+2021-10-01T22:20:55.444Z [desafio-final-node] info GET /venda
+2021-10-01T22:21:47.779Z [desafio-final-node] info GET /venda
+2021-10-01T22:22:15.729Z [desafio-final-node] info GET /venda
+2021-10-01T22:26:10.745Z [desafio-final-node] info GET /venda
+2021-10-01T22:26:39.193Z [desafio-final-node] info GET /venda
+2021-10-01T22:30:37.679Z [desafio-final-node] error {req.method}  - livros is not associated to clientes!
+2021-10-01T22:31:43.448Z [desafio-final-node] info GET /venda
+2021-10-01T22:35:36.408Z [desafio-final-node] info GET /venda
+2021-10-02T13:00:28.237Z [desafio-final-node] error {req.method}  - Include unexpected. Element has to be either a Model, an Association or an object.
+2021-10-02T13:05:09.566Z [desafio-final-node] info GET /venda
+2021-10-02T13:35:58.163Z [desafio-final-node] error {req.method}  - autores is not associated to vendas!
+2021-10-02T13:36:27.298Z [desafio-final-node] error {req.method}  - autores is not associated to vendas!
+2021-10-02T13:37:15.119Z [desafio-final-node] error {req.method}  - autores is not associated to vendas!
+2021-10-02T13:43:05.599Z [desafio-final-node] info PUT /livro/info  - {"livroId":4,"descricao":"XXXXXXXXXXXX","paginas":50,"editora":"abril","avaliacoes":[]}
+2021-10-03T04:54:59.548Z [desafio-final-node] info PUT /livro/info  - {"livroId":4,"descricao":"XXXXXXXXXXXX","paginas":50,"editora":"abril","avaliacoes":[]}
+2021-10-03T04:56:07.641Z [desafio-final-node] info PUT /livro/info  - {"livroId":4,"descricao":"XXXXXXXXXXXX","paginas":50,"editora":"abril","avaliacoes":[]}
+2021-10-03T04:56:43.620Z [desafio-final-node] info GET /livro/info  - {"livroId":5,"descricao":"html","paginas":50,"editora":"trybe","avaliacoes":[],"_id":"6159380b19721af4dd5bba93"}
+2021-10-03T04:57:19.410Z [desafio-final-node] info PUT /livro/info  - {"livroId":5,"descricao":"html","paginas":50,"editora":"tribo","avaliacoes":[]}
+2021-10-03T05:02:46.996Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T05:06:39.841Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T05:08:32.616Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T05:10:23.450Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T05:17:59.978Z [desafio-final-node] info GET /livro/info  - {"livroId":5,"descricao":"html","paginas":50,"editora":"trybe","avaliacoes":[],"_id":"61593d0754011b2b8fd49522"}
+2021-10-03T05:18:27.526Z [desafio-final-node] info PUT /livro/info  - {"livroId":5,"descricao":"html","paginas":50,"editora":"tribo","avaliacoes":[]}
+2021-10-03T05:19:07.701Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T15:59:48.638Z [desafio-final-node] info PUT /livro/info - {"livroId":5,"descricao":"oidfojggnfngjngjisngijnsjfgnsjfgnjk","paginas":50,"editora":"kjfojfivjivjnivojiovdjfv","avaliacoes":[]}
+2021-10-03T16:21:29.440Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T16:28:11.682Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T16:30:51.514Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T16:58:23.975Z [desafio-final-node] error {req.method}  - BSON field 'delete.deletes.q' is the wrong type 'string', expected type 'object'
+2021-10-03T17:00:01.889Z [desafio-final-node] info DELETE /livro/info
+2021-10-03T17:07:16.617Z [desafio-final-node] info DELETE /livro/info
+2021-10-03T17:16:02.174Z [desafio-final-node] info GET /vendaundefined
+2021-10-03T17:16:09.821Z [desafio-final-node] info GET /venda
+2021-10-03T17:22:07.589Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-03T17:26:12.308Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"

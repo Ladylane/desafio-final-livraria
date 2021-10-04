@@ -1,3 +1,4 @@
+import AutorModel from "../models/autor.model.js";
 import ClienteModel from "../models/cliente.model.js";
 import LivroModel from "../models/livro.model.js";
 import VendaModel from "../models/venda.model.js";
@@ -53,12 +54,16 @@ async function getVendas(order, field){
 async function getVendaByClienteId(id) {
     try {
         const data = await VendaModel.findAll({
-            include:{
+            include:[{
                 model:ClienteModel,
                 where: {
-                    clienteId: id,
+                    clienteId: id
+                     }
+            }, 
+                { model: LivroModel,
+                require: true 
                 }
-            }
+            ]
         })
         return data;
     } catch (err) {
