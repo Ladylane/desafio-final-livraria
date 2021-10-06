@@ -96,6 +96,41 @@ async function deleteLivroInfo(req, res, next) {
         next(err);
     }
 }
+//cria avaliacao com id no body
+// async function createAvaliacao(req, res, next){
+//     try{
+//         let params= req.body;
+//         if(!params.livroId || !params.avaliacao){
+//             throw new Error(" Todos campos são obrigatórios.");
+//         }
+//         await LivroService.createAvaliacao(params.livroId, params.avaliacao);
+//         res.end();
+//     } catch(err){
+//         next(err);
+//     }
+// }
+
+async function createAvaliacao(req, res, next){
+    try{
+        let conteudo= req.body;
+        if(!conteudo.avaliacao){
+            throw new Error(" Campo avaliação é obrigatorio.");
+        }
+        await LivroService.createAvaliacao(req.params.id, conteudo.avaliacao);
+        res.end();
+    } catch(err){
+        next(err);
+    }
+}
+
+async function deleteAvaliacao(req, res, next){
+    try{
+        await LivroService.deleteAvaliacao(req.params.id, req.params.index);
+        res.end();
+    } catch(err){
+        next(err);
+    }
+}
 
 export default{
     createLivro,
@@ -105,5 +140,7 @@ export default{
     deleteLivro,
     createLivroInfo,
     updateLivroInfo,
-    deleteLivroInfo
+    deleteLivroInfo,
+    createAvaliacao,
+    deleteAvaliacao
 }

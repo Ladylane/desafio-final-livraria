@@ -19,7 +19,8 @@ async function getVendas(req,res,next){
     try{
         const order=req.query.order;
         const field=req.query.field;
-        res.send(await VendaService.getVendas(order,field));
+        const autorId=req.query.autorId;
+        res.send(await VendaService.getVendas(order,field,autorId));
         logger.info(`GET /venda` + req.query.order)
     }catch(err){
         next (err);
@@ -43,6 +44,16 @@ async function getVendaByClienteId(req,res,next){
         next (err);
     }
 }
+
+// async function getVendaByAutorId(req,res,next){
+//     try{
+//         const field= req.query.field;
+//         res.send(await VendaService.getVendaByAutorId(field));
+//         logger.info(`GET /venda`)
+//     }catch(err){
+//         next (err);
+//     }
+// }
 
 async function updateVenda(req,res,next){
     try{
@@ -71,7 +82,6 @@ async function deleteVenda(req,res,next){
 export default{
     createVenda,
     getVendas,
-    // getVenda,
     getVendaByClienteId,
     updateVenda,
     deleteVenda

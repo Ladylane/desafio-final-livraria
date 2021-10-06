@@ -1,4 +1,5 @@
 import LivroRepository from "../repositories/livro.repository.js";
+import livroInfoRepository from "../repositories/livroInfo.repository.js";
 import LivroInfoRepository from "../repositories/livroInfo.repository.js";
 
 async function createLivro(livro){
@@ -10,7 +11,9 @@ async function getLivros(order,field){
 }
 
 async function getLivro(id){
-    return await LivroRepository.getLivro(id);
+    const livro = await LivroRepository.getLivro(id);
+    livro.info = await LivroInfoRepository.getLivroInfo(parseInt(id));
+    return livro;
 }
 
 async function updateLivro(livro){
@@ -34,6 +37,14 @@ async function deleteLivroInfo(livroId) {
     await LivroInfoRepository.deleteLivroInfo(livroId);
 }
 
+async function createAvaliacao(livroId, avaliacao){
+    await LivroInfoRepository.createAvaliacao(parseInt(livroId), avaliacao);
+}
+
+async function deleteAvaliacao(livroId, index){
+    await LivroInfoRepository.deleteAvaliacao(parseInt(livroId), index);
+}
+
 export default{
     createLivro,
     getLivros,
@@ -42,5 +53,7 @@ export default{
     deleteLivro,
     createLivroInfo,
     updateLivroInfo,
-    deleteLivroInfo
+    deleteLivroInfo,
+    createAvaliacao,
+    deleteAvaliacao
 }

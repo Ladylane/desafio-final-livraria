@@ -43,7 +43,7 @@ async function getLivros(order, field){
 
 async function getLivro(id){
     try{
-        return await LivroModel.findByPk(id);
+        return await LivroModel.findByPk(id, {raw: true});
     }catch (err){
         throw err;
     }

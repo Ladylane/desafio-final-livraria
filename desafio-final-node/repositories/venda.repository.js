@@ -11,7 +11,7 @@ async function insertVenda(venda){
     }
 }
 
-async function getVendas(order, field){
+async function getVendas(order, field, autorId){
     try{
         let bdField=null;
         if(field==="vendaId" || !field) {
@@ -22,9 +22,23 @@ async function getVendas(order, field){
             bdField="data"
         } else if(field==="clienteId") {
             bdField="clienteId"
-        } else {
+        } else if(field==="livroId"){
             bdField="livroId"
-        }
+        } else 
+                console.log("---> AUTOR ID", autorId)
+                return await VendaModel.findAll({
+                    include:[{
+                      model:LivroModel,
+                        include : [{
+                         model: AutorModel,
+                         require: true
+                     }],
+                     where: { autorId: autorId },
+                    
+                  }]
+                })
+             
+
         if (order==="asc" || !order){
             return await VendaModel.findAll({
                 order:[
@@ -38,6 +52,8 @@ async function getVendas(order, field){
                 ]
             })
         }
+        
+        
     }catch(err){
         throw err;
     }
@@ -50,27 +66,44 @@ async function getVendas(order, field){
 //         throw err;
 //     }
 // }
-// @@@@@@@@@@@
+
 async function getVendaByClienteId(id) {
     try {
         const data = await VendaModel.findAll({
             include:[{
                 model:ClienteModel,
-                where: {
-                    clienteId: id
-                     }
-            }, 
-                { model: LivroModel,
-                require: true 
-                }
-            ]
+                where: { clienteId: id }
+            }, { 
+                model: LivroModel, require: true 
+            }]
         })
         return data;
     } catch (err) {
         throw err;
     }
 }
-// @@@@@@@@@@@
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+// async function getVendaByAutorId(field) {
+//     try {
+//         bdField= null;
+//         if(field==="autorId")
+//         const data = await VendaModel.findAll({
+//             include:{
+//                 model:LivroModel,
+//                 where: {
+//                     autorId: id
+//                 }
+//             }
+//         })
+//         return data;
+//     } catch (err) {
+//         throw err;
+//     }
+// }
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 async function updateVenda(venda){
@@ -101,8 +134,8 @@ async function deleteVenda(id){
 export default{
     insertVenda,
     getVendas,
-    // getVenda,
     getVendaByClienteId,
+    // getVendaByAutorId,
     updateVenda,
     deleteVenda
 }

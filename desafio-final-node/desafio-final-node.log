@@ -277,3 +277,99 @@
 2021-10-03T17:16:09.821Z [desafio-final-node] info GET /venda
 2021-10-03T17:22:07.589Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
 2021-10-03T17:26:12.308Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-04T19:33:02.263Z [desafio-final-node] error {req.method}  - invalid input syntax for type integer: "info"
+2021-10-04T20:03:43.995Z [desafio-final-node] error {req.method}  - Cannot set property 'info' of null
+2021-10-04T20:04:05.687Z [desafio-final-node] error {req.method}  - loggers is not defined
+2021-10-04T20:04:35.211Z [desafio-final-node] info GET /livroundefined
+2021-10-04T20:04:44.255Z [desafio-final-node] error {req.method}  - loggers is not defined
+2021-10-04T20:10:21.203Z [desafio-final-node] error {req.method}  - loggers is not defined
+2021-10-04T21:01:11.628Z [desafio-final-node] info GET /livroundefined
+2021-10-04T21:01:40.233Z [desafio-final-node] info PUT /livro - {"livroId":2,"nome":"Node","valor":"23","estoque":5,"autorId":2}
+2021-10-04T21:05:43.803Z [desafio-final-node] error {req.method}  - Cannot read property 'push' of undefined
+2021-10-04T21:30:35.403Z [desafio-final-node] error {req.method}  - livroId is not defined
+2021-10-04T21:36:25.401Z [desafio-final-node] error {req.method}  - Cannot read property 'avaliacoes' of null
+2021-10-04T21:38:27.794Z [desafio-final-node] error {req.method}  - Cannot read property 'avaliacoes' of null
+2021-10-04T23:20:43.987Z [desafio-final-node] info GET /livroundefined
+2021-10-04T23:21:09.811Z [desafio-final-node] info GET /vendaundefined
+2021-10-04T23:21:51.470Z [desafio-final-node] info GET /livroundefined
+2021-10-05T00:01:24.717Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:02:04.967Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:02:19.488Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:03:12.602Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:06:29.196Z [desafio-final-node] info GET /livro
+2021-10-05T00:06:54.967Z [desafio-final-node] info GET /livroundefined
+2021-10-05T00:08:41.325Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:08:53.325Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:38:42.723Z [desafio-final-node] info GET /venda
+2021-10-05T00:39:03.965Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:43:38.167Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:46:02.748Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T00:46:21.224Z [desafio-final-node] info GET /vendadesc
+2021-10-05T00:49:30.147Z [desafio-final-node] info GET /vendadesc
+2021-10-05T00:51:01.039Z [desafio-final-node] info GET /vendadesc
+2021-10-05T00:52:23.222Z [desafio-final-node] info GET /vendadesc
+2021-10-05T00:59:11.203Z [desafio-final-node] error {req.method}  - Include unexpected. Element has to be either a Model, an Association or an object.
+2021-10-05T01:00:11.307Z [desafio-final-node] error {req.method}  - Include unexpected. Element has to be either a Model, an Association or an object.
+2021-10-05T01:00:12.648Z [desafio-final-node] error {req.method}  - Include unexpected. Element has to be either a Model, an Association or an object.
+2021-10-05T01:00:39.390Z [desafio-final-node] error {req.method}  - autores is not associated to vendas!
+2021-10-05T01:02:40.053Z [desafio-final-node] error {req.method}  - Include unexpected. Element has to be either a Model, an Association or an object.
+2021-10-05T01:03:52.030Z [desafio-final-node] error {req.method}  - Include unexpected. Element has to be either a Model, an Association or an object.
+2021-10-05T01:05:12.105Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:05:39.082Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:05:44.462Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:06:09.140Z [desafio-final-node] error {req.method}  - autores is not associated to vendas!
+2021-10-05T01:07:28.663Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:12:26.392Z [desafio-final-node] error {req.method}  - autores is not associated to vendas!
+2021-10-05T01:13:25.315Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:14:18.416Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:37:06.668Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:37:37.786Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:38:52.325Z [desafio-final-node] info GET /vendadesc
+2021-10-05T01:54:20.614Z [desafio-final-node] info GET /vendadesc
+2021-10-05T16:20:20.585Z [desafio-final-node] error {req.method}  - zero-length delimited identifier at or near """"
+2021-10-05T16:20:44.960Z [desafio-final-node] info GET /vendadesc
+2021-10-05T16:21:37.255Z [desafio-final-node] info GET /vendadesc
+2021-10-05T16:21:50.691Z [desafio-final-node] info GET /livroundefined
+2021-10-05T16:22:20.898Z [desafio-final-node] info GET /livroundefined
+2021-10-05T16:22:38.500Z [desafio-final-node] info GET /vendadesc
+2021-10-05T16:23:00.690Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T16:23:04.531Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T16:23:36.016Z [desafio-final-node] info GET /livroundefined
+2021-10-05T16:24:09.622Z [desafio-final-node] info POST /venda - {"vendaId":7,"valor":"900","data":"2021-07-17","clienteId":1,"livroId":3}
+2021-10-05T16:24:15.771Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T16:24:48.516Z [desafio-final-node] info GET /vendadesc
+2021-10-05T16:25:25.821Z [desafio-final-node] info POST /venda - {"vendaId":8,"valor":"50","data":"2019-07-17","clienteId":2,"livroId":3}
+2021-10-05T16:25:37.863Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T16:26:00.789Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:10:29.304Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:12:07.208Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:12:41.385Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:14:43.926Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:17:17.726Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:17:58.335Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:18:58.427Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:19:07.504Z [desafio-final-node] info GET /vendaasc
+2021-10-05T18:19:16.175Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:19:28.684Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:19:40.106Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:21:26.696Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:22:51.953Z [desafio-final-node] info GET /vendadesc
+2021-10-05T18:23:51.089Z [desafio-final-node] info GET /vendadesc
+2021-10-05T20:18:19.680Z [desafio-final-node] info GET /vendadesc
+2021-10-05T20:18:45.012Z [desafio-final-node] info GET /vendadesc
+2021-10-05T22:48:21.768Z [desafio-final-node] error {req.method}  - loggers is not defined
+2021-10-05T22:48:43.162Z [desafio-final-node] info GET /livroundefined
+2021-10-05T22:48:54.219Z [desafio-final-node] info GET /livroundefined
+2021-10-05T22:53:33.377Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T22:54:09.318Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T22:54:40.755Z [desafio-final-node] error {req.method}  - WHERE parameter "autor_id" has invalid "undefined" value
+2021-10-05T22:56:51.900Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T22:57:46.148Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T22:58:40.193Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T22:59:36.248Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T23:00:47.924Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T23:01:11.183Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T23:02:17.970Z [desafio-final-node] error {req.method}  - WHERE parameter "autor_id" has invalid "undefined" value
+2021-10-05T23:02:24.266Z [desafio-final-node] error {req.method}  - WHERE parameter "autor_id" has invalid "undefined" value
+2021-10-05T23:02:37.902Z [desafio-final-node] info GET /vendaundefined
+2021-10-05T23:09:56.172Z [desafio-final-node] error {req.method}  - loggers is not defined
